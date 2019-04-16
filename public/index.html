@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Чат</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <main class="messages-section">
+      <dl class="messages-section__list"></dl>
+    </main>
+    <section class="input-section">
+      <input
+        class="input-section__input input-section__input--name"
+        spellcheck="false"
+        onkeypress="handleKeyPress(event)"
+        placeholder="Имя"
+      />
+      <input
+        class="input-section__input input-section__input--text"
+        spellcheck="false"
+        onkeypress="handleKeyPress(event)"
+        placeholder="Сообщение"
+      />
+      <button class="input-section__button" onclick="sendMessage()">
+        ОТПРАВИТЬ
+      </button>
+    </section>
+
+    <!-- First -->
+    <script src="/public/lib/socket.io.js"></script>
+    <!-- Second -->
+    <script src="/public/main.js"></script>
+  </body>
+</html>
