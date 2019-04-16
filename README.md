@@ -1,6 +1,6 @@
-# Simple socket.io chat
+# Simple socket.io chat 🚀
 
-## How to use
+## How to use 🤔
 
 Clone the repo:
 
